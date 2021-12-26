@@ -39,7 +39,7 @@ flags.DEFINE_enum('dataset', 'cifar10', [
 ], 'Name of the dataset.')
 flags.DEFINE_enum('model_name', 'WideResnet28x10', [
     'WideResnet28x10', 'WideResnet28x6_ShakeShake', 'Pyramid_ShakeDrop',
-    'Resnet50', 'Resnet101', 'Resnet152'
+    'Resnet50', 'Resnet101', 'Resnet152', 'VisionTransformer', 'VisionTransformer_mini'
 ] + list(efficientnet.MODEL_CONFIGS.keys()), 'Name of the model to train.')
 flags.DEFINE_integer('num_epochs', 200,
                      'How many epochs the model should be trained for.')
